@@ -19,3 +19,5 @@ v_data = interp2(P_table, T_table, specific_Volume,Pq_grid,Tq_grid,"linear");
 u_data = interp2(P_table, T_table, internal_Energy,Pq_grid,Tq_grid,"linear");
 
 time = toc;
+
+save("p3_v_and_u_data.mat","v_data",'u_data')
